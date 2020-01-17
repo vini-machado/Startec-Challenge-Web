@@ -1,0 +1,30 @@
+body.is-preload
+  #header
+    .top
+      #logo
+        h1#title
+          | Minions Store
+        p
+          | Favorita da Criançada!
+      nav#nav
+        ul
+          li
+            a#top-link[href="#top"]
+              span.glyphicon.glyphicon-home[aria-hidden="true"]
+              span.icon.solid.fa-home
+                | Intro
+          li
+            a#portfolio-link[href="#produtos"]
+              span.glyphicon.glyphicon-th-list[aria-hidden="true"]
+              span.icon.solid.fa-th
+                | Produtos
+          li
+            a#contact-link[href="#formulario"]
+              span.glyphicon.glyphicon-shopping-cart[aria-hidden="true"]
+              span.icon.solid.fa-envelope
+                | Formulário de Compra
+    .bottom
+      span#minion-img.text-center
+        |  <img src= 
+        = asset_path "minion.png"
+        |  alt=" "> 

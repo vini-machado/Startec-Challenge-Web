@@ -1,0 +1,165 @@
+#main
+  section#top.one.dark.cover
+    .container
+      header
+        h2.alt
+          | Seja muito bem-vindo à 
+          strong
+            | Minion Store!
+        p
+          | Aqui você pode escolher e reservar
+          br
+          |  os 
+          strong
+            | iteminions
+          |  que mais gostar.
+      footer
+        a.button.scrolly[href="#produtos"]
+          | Ver Produtos
+  section#produtos.two
+    .container.col-md-6
+      header
+        h2
+          | Nossos Produtos
+      p
+        | Nossos produtos possuem a melhor qualidade do mercado!
+        br
+        |  Escolha todos que puder e entregamos diretamente na sua residência! 
+        br
+        strong
+          | Reserve já
+        | .
+      .row
+        .col-4.col-12-mobile
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic02.jpg"
+              |  alt="">
+            header
+              h2
+                | Bob Falante
+              br
+              h3
+                | Possui uma pele lisa e macia, reage a movimentos em sua cabeça e vem com um acessório extra!
+                br
+                | Preço: olho da cara
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic03.jpg"
+              |  alt="" />
+            header
+              h2
+                | Minion Tim
+              br
+              h3
+                | O minion com dois olhos que emite sons presentes no filme Meu Malvado Favorito 3
+                br
+                |  Preço: hoje ta de graça
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+        .col-4.col-12-mobile
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic04.jpg"
+              |  alt="" />
+            header
+              h2
+                | Minion Dave
+              br
+              | Aperte sua cabeça para ouví-lo falar! Possui 15 falas diferentes!
+              br
+              |  Preço: olho da cara
+              h3
+
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic05.jpg"
+              |  alt="" />
+            header
+              h2
+                |  Minions Havaianos
+              br
+              h3
+                | Diretamente do Hawaii para a sua casa, esses minions fofinhos de algodão são capazes de cantar canções divertidas para toda a família
+                br
+                |  Preço: dois fardos de breja
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+        .col-4.col-12-mobile
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic06.jpg"
+              |  alt="" />
+            header
+              h2
+                | Minion vampiro
+              br
+              h3
+                | O minion mais legal apesar de matar seu filho a noite.
+                br
+                |  Preço: um rim
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+          article.item
+            a.image.fit[href="#"]
+              | <img src=
+              = asset_path "pic07.jpg"
+              |  alt="" />
+            header
+              h2
+                | Minion Action Figures
+              br
+              h3
+                | Seus super-heróis mais fofos chegaram para decorar a casa e deixar o ambiente mais divertido. 
+                br
+                |  Preço: um minion
+              p
+                span.glyphicon.glyphicon-minus[aria-hidden="true" role="button"]
+
+                span.glyphicon.glyphicon-plus[aria-hidden="true" role="button"]
+  section#formulario.four
+    .container
+      header
+        h2
+          | Formulário de Compra
+      p
+        | No espaço abaixo, insira seus dados para que possamos envair o mais rápido possível o brinquedo que você deseja reservar!
+      form[method="post" action="#"]
+        .row
+          .col-6.col-12-mobile
+            input[type="text" name="name" placeholder="Seu Nome"]
+          .col-6.col-12-mobile
+            input[type="text" name="email" placeholder="Seu e-mail"]
+          .col-6.col-12-mobile
+            input[type="text" name="end" placeholder="Rua"]
+          .col-6.col-12-mobile
+            input[type="text" name="end" placeholder="Número"]
+          .col-6.col-12-mobile
+            input[type="text" name="end" placeholder="Bairro"]
+          .col-6.col-12-mobile
+            input[type="text" name="end" placeholder="Cidade"]
+          .col-6.col-12-mobile
+            input[type="text" name="end" placeholder="Estado"]
+          .col-12
+            textarea[name="message" placeholder="Ex.: 2 Minion Tim, 1 Bob Falante"]
+          .col-12
+            input[type="submit" value="Reservar!"]
