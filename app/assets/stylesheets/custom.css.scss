@@ -22,7 +22,7 @@
 #minion-img{
 		margin: 1.5em 1.25em 1.25em 1.25em;
 		position: relative;
-		margin-right:50px;
+
 }
 
 
@@ -1393,6 +1393,7 @@ input, select, textarea {
 
 			.container {
 				width: 100%;
+				
 			}
 
 		}
@@ -3225,17 +3226,13 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 1.5em 0 0.75em 0;
+			padding: 0.5em 0.75em 0 0;
 		}
 
 			#header .bottom > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 3em;
 			}
 
-		#header .icons {
-			font-size: 0.8em;
-			text-align: center;
-		}
 
 			#header .icons a {
 				color: #41484c;
