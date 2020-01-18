@@ -139,7 +139,10 @@
                 br
                 |  Preço: R$ 1,00
 
-
+    = form_with(url: "/", method: "get") do
+      = label_tag(:user, "Email:")
+      = email_field(:user, :address)
+      = submit_tag
     
   section#formulario.four
     .container
@@ -156,15 +159,15 @@
           .col-6.col-12-mobile
             input[type="text" name="email" placeholder="E-mail"]
           .col-6.col-12-mobile
-            input[type="text" name="end" placeholder="Rua"]
+            input[type="text" name="rua" placeholder="Rua"]
           .col-6.col-12-mobile
-            input[type="text" name="end" placeholder="Número"]
+            input[type="text" name="numero" placeholder="Número"]
           .col-6.col-12-mobile
-            input[type="text" name="end" placeholder="Bairro"]
+            input[type="text" name="bairro" placeholder="Bairro"]
           .col-6.col-12-mobile
-            input[type="text" name="end" placeholder="Cidade"]
+            input[type="text" name="cidade" placeholder="Cidade"]
           .col-6.col-12-mobile
-            input[type="text" name="end" placeholder="Estado"]
+            input[type="text" name="estado" placeholder="Estado"]
           .col-12
             textarea[name="message" placeholder="Ex.: 2 Minion Tim, 1 Bob Falante"]
           .col-12

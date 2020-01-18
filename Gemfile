@@ -60,3 +60,6 @@ gem 'slim-rails'
 gem 'rails-ujs', '~> 0.1.0'
 
 gem 'simple_form'
+
+gem 'foundation-rails'
+gem 'foundation-icons-sass-rails'
