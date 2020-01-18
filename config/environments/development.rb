@@ -55,13 +55,12 @@ Rails.application.configure do
   #configuring devise mailer
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  host = 'vinicius-startec.herokuapp.com'
-  config.action_mailer.default_url_options = { host: host }
+  config.action_mailer.default_url_options = { host: "localhost:3000" }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name:     '12vini34@gmail.com',
+    user_name:     '12viniteste34@gmail.com',
     password:      'vini_123',
-    domain:        'heroku.com',
+    domain:        'gmail.com',
     address:       'smtp.gmail.com',
     port:          '587',
     authentication: :plain,
