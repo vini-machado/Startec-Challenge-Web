@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   
-  def home
+  def main
     
     unless params.dig(:name).nil?
     
@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
         
       email_content = email+address+message
             
-      ActionMailer::Base.mail(from:"me@example.com", to: "12vini34@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
+      ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
       
       
     end
