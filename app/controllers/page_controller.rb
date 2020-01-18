@@ -1,5 +1,7 @@
 class PageController < ApplicationController
     def main
-        puts params[:name]
+        unless params[:name].nil?
+            puts params[:name]
+        end
     end
 end
