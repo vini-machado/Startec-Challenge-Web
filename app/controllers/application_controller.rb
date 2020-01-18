@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
         
       email_content = email+address+message
             
-      ActionMailer::Base.mail(from:"12viniteste34@gmail.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
+      ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
       
       
     end
