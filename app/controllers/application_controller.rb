@@ -1,3 +1,10 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  
+  def home
+    
+    
+    ActionMailer::Base.mail(from:"me@example.com", to: "viniciuscmachado22@gmail.com", subject: "test", body: "test").deliver
+    
+    
+  end
 end

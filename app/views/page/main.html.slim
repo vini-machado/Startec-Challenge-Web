@@ -24,8 +24,10 @@
           | Nossos Produtos
       p
         | Nossos produtos possuem a melhor qualidade do mercado!
+        
         br
         |  Escolha todos que puder e entregamos diretamente na sua residência! 
+        
         br
         strong
           | Reserve já
@@ -40,9 +42,11 @@
             header
               h2
                 | Bob Falante
+              
               br
               h3
                 | Possui uma pele lisa e macia, reage a movimentos em sua cabeça e vem com um acessório extra!
+                
                 br
                 | Preço: R$ 1,00
 
@@ -51,14 +55,17 @@
               | <img src=
               = asset_path "pic03.jpg"
               |  alt="" />
+            
             header
               h2
                 | Minion Tim
+              
               br
               h3
                 | O minion com dois olhos que emite sons presentes no filme Meu Malvado Favorito 3
+                
                 br
-                |  Preço: Preço: R$ 1,00
+                |  Preço: R$ 1,00
 
         .col-4.col-12-mobile
           article.item
@@ -66,13 +73,17 @@
               | <img src=
               = asset_path "pic04.jpg"
               |  alt="" />
+            
             header
               h2
                 | Minion Dave
+              
               br
               | Aperte sua cabeça para ouví-lo falar! Possui 15 falas diferentes!
+              
               br
-              |  Preço: olho da cara
+              |  Preço: R$ 1,00
+              
               h3
 
           article.item
@@ -80,14 +91,18 @@
               | <img src=
               = asset_path "pic05.jpg"
               |  alt="" />
+            
+            
             header
               h2
                 |  Minions Havaianos
+              
               br
               h3
                 | Diretamente do Hawaii para a sua casa, esses minions fofinhos de algodão são capazes de cantar canções divertidas para toda a família
+                
                 br
-                |  Preço: Preço: R$ 1,00
+                |  Preço: R$ 1,00
 
         .col-4.col-12-mobile
           article.item
@@ -95,28 +110,34 @@
               | <img src=
               = asset_path "pic06.jpg"
               |  alt="" />
+            
             header
               h2
                 | Minion vampiro
+              
               br
               h3
                 | O minion mais legal apesar de matar seu filho a noite.
+                
                 br
-                |  Preço: Preço: R$ 1,00
+                |  Preço: R$ 1,00
              
           article.item
             a.image.fit[href="#"]
               | <img src=
               = asset_path "pic07.jpg"
               |  alt="" />
+            
             header
               h2
                 | Minion Action Figures
+              
               br
               h3
                 | Seus super-heróis mais fofos chegaram para decorar a casa e deixar o ambiente mais divertido. 
+                
                 br
-                |  Preço: Preço: R$ 1,00
+                |  Preço: R$ 1,00
 
 
     
@@ -128,7 +149,7 @@
       p
         | No espaço abaixo, insira seus dados para que possamos envair o mais rápido possível o brinquedo que você deseja reservar!
       
-      form[method="post" action="#"]
+      form[method="get" action="#"]
         .row
           .col-6.col-12-mobile
             input[type="text" name="name" placeholder="Nome"]
@@ -148,3 +169,4 @@
             textarea[name="message" placeholder="Ex.: 2 Minion Tim, 1 Bob Falante"]
           .col-12
             input[type="submit" value="Reservar!"]
+            
