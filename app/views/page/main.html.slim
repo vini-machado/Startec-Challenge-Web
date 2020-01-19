@@ -41,7 +41,7 @@
               |  alt="">
             header
               h2
-                | Bob Falante
+                | Minion Bob Falante
               
               br
               h3
@@ -168,6 +168,7 @@
         p
         |
         
+        
         table.shopping-cart
           thead
             tr
@@ -183,23 +184,83 @@
           tbody
             tr
               td
-                | First Line
+                | <img src=
+                = asset_path "pic02.jpg"
+                |  alt="" width="100px" height="100px">
               
               td
-                |
+                | Minion Bob Falante
                 
               td
-                | . 
+                |
+                = number_field_tag 'bob', nil, in: 1...10, class: 'special_input'
             
             tr
               td
-                | Second Line
+                | <img src=
+                = asset_path "pic03.jpg"
+                |  alt="" width="100px" height="100px">
               
               td
-                |
+                | Minion Tim
+                
+              td
+                | 
+                = number_field_tag 'tim', nil, in: 1...10, class: 'special_input'
+            
+            tr
+              td
+                | <img src=
+                = asset_path "pic04.jpg"
+                |  alt="" width="100px" height="100px">
               
               td
+                | Minion Dave
+                
+              td
                 |
+                = number_field_tag 'dave', nil, in: 1...10, class: 'special_input'
+            
+            tr
+              td
+                | <img src=
+                = asset_path "pic05.jpg"
+                |  alt="" width="100px" height="100px">
+              
+              td
+                | Minions Havaianos
+                
+              td
+                |
+                = number_field_tag 'hawaii', nil, in: 1...10, class: 'special_input'
+            
+            tr
+              td
+                | <img src=
+                = asset_path "pic06.jpg"
+                |  alt="" width="100px" height="100px">
+              
+              td
+                | Minion vampiro
+                
+              td
+                |
+                = number_field_tag 'vamp', nil, in: 1...10, class: 'special_input'
+           
+            tr
+              td
+                | <img src=
+                = asset_path "pic07.jpg"
+                |  alt="" width="100px" height="100px">
+              
+              td
+                | Minion Action Figures
+                
+              td
+                |
+                = number_field_tag 'ac', nil, in: 1...10, class: 'special_input'
+            
+
                   
         form[method="get" action="#"]          
           .col-12
