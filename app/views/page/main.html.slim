@@ -35,7 +35,7 @@
       .row
         .col-4.col-12-mobile
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic02.jpg"
               |  alt="">
@@ -51,7 +51,7 @@
                 | Preço: R$ 1,00
 
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic03.jpg"
               |  alt="" />
@@ -65,11 +65,11 @@
                 | O minion com dois olhos que emite sons presentes no filme Meu Malvado Favorito 3
                 
                 br
-                |  Preço: R$ 1,00
+                |  Preço: R$ 2,00
 
         .col-4.col-12-mobile
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic04.jpg"
               |  alt="" />
@@ -82,12 +82,12 @@
               | Aperte sua cabeça para ouví-lo falar! Possui 15 falas diferentes!
               
               br
-              |  Preço: R$ 1,00
+              |  Preço: R$ 3,00
               
               h3
 
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic05.jpg"
               |  alt="" />
@@ -102,11 +102,11 @@
                 | Diretamente do Hawaii para a sua casa, esses minions fofinhos de algodão são capazes de cantar canções divertidas para toda a família
                 
                 br
-                |  Preço: R$ 1,00
+                |  Preço: R$ 4,00
 
         .col-4.col-12-mobile
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic06.jpg"
               |  alt="" />
@@ -120,10 +120,10 @@
                 | O minion mais legal apesar de matar seu filho a noite.
                 
                 br
-                |  Preço: R$ 1,00
+                |  Preço: R$ 5,00
              
           article.item
-            a.image.fit[href="#"]
+            a.image.fit
               | <img src=
               = asset_path "pic07.jpg"
               |  alt="" />
@@ -137,7 +137,7 @@
                 | Seus super-heróis mais fofos chegaram para decorar a casa e deixar o ambiente mais divertido. 
                 
                 br
-                |  Preço: R$ 1,00
+                |  Preço: R$ 6,00
 
     
   section#formulario.four
@@ -148,7 +148,7 @@
       p
         | No espaço abaixo, insira seus dados para que possamos envair o mais rápido possível o brinquedo que você deseja reservar!
       
-      form[method="get" action="#"]
+      form[method="get"]
         .row
           .col-6.col-12-mobile
             input[type="text" name="name" placeholder="Nome"]
@@ -164,8 +164,44 @@
             input[type="text" name="cidade" placeholder="Cidade"]
           .col-6.col-12-mobile
             input[type="text" name="estado" placeholder="Estado"]
-          .col-12
-            textarea[name="message" placeholder="Ex.: 2 Minion Tim, 1 Bob Falante"]
+        
+        p
+        |
+        
+        table.shopping-cart
+          thead
+            tr
+              td
+                | Miniatura do Produto
+              
+              td
+                | Nome do Produto
+              
+              td
+                | Quantidade Desejada
+          
+          tbody
+            tr
+              td
+                | First Line
+              
+              td
+                |
+                
+              td
+                | . 
+            
+            tr
+              td
+                | Second Line
+              
+              td
+                |
+              
+              td
+                |
+                  
+        form[method="get" action="#"]          
           .col-12
             input[type="submit" value="Reservar!"]
             

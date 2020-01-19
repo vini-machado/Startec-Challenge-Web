@@ -7,7 +7,7 @@ class PageController < ApplicationController
           
           address = "\nEndereço: Rua " + params[:rua] + ", " + params[:numero] + ", " + params[:bairro] + ", " + params[:cidade] + ", " + params[:estado] + "."
           
-          message = "\nO pedido de " + params[:name] + " foi " + params[:message] + "."
+          message = "\nO pedido de " + params[:name] + " foi " + "."
             
           email_content = email+address+message
                 
