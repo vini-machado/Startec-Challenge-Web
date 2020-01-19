@@ -7,7 +7,33 @@ class PageController < ApplicationController
           
           address = "\nEndereço: Rua " + params[:rua] + ", " + params[:numero] + ", " + params[:bairro] + ", " + params[:cidade] + ", " + params[:estado] + "."
           
-          message = "\nO pedido de " + params[:name] + " foi " + "."
+          products = [params[:bob], params[:tim], params[:dave], params[:hawaii], params[:vamp], params[:ac]]
+
+          
+          reservation = {
+              "Minion Bob Falante" => products[0],
+              "Minion Tim" => products[1],
+              "Minion Dave" => products[2],
+              "Minions Havaianos" => products[3],
+              "Minion Vampiro" => products[4],
+              "Minion Action Figures" => products[5],
+          }
+          
+          pedido = ""
+          
+          reservation.each do |key, value|
+            if value == "0" || value == ""
+              next
+            else
+             pedido = pedido + "\t#{key} : #{value}\n"
+            end        
+          end 
+          
+          if pedido == ""
+            pedido = "Não houve pedido"
+          end  
+          
+          message = "\nO pedido de " + params[:name] + " foi:\n " + pedido + "."
             
           email_content = email+address+message
                 
