@@ -38,7 +38,7 @@ class PageController < ApplicationController
           end  
           email_content = email+address+message
                 
-          ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
+          ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "joaotosto@startecexp.com", subject: "Reserva dos Minions", body: email_content).deliver
           
          
           render 'page/js'
