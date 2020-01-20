@@ -62,7 +62,7 @@
               
               br
               h3
-                | O minion com dois olhos que emite sons presentes no filme Meu Malvado Favorito 3
+                | O minion com dois olhos que emite sons presentes no filme Meu Malvado Favorito 3.
                 
                 br
                 |  Preço: R$ 2,00
@@ -151,19 +151,19 @@
       form[method="get"]
         .row
           .col-6.col-12-mobile
-            input[type="text" name="name" placeholder="Nome"]
+            input[type="text" name="name" placeholder="Nome" required]
           .col-6.col-12-mobile
-            input[type="text" name="email" placeholder="E-mail"]
+            input[type="text" name="email" placeholder="E-mail" required]
           .col-6.col-12-mobile
-            input[type="text" name="rua" placeholder="Rua"]
+            input[type="text" name="rua" placeholder="Rua" required]
           .col-6.col-12-mobile
-            input[type="text" name="numero" placeholder="Número"]
+            input[type="text" name="numero" placeholder="Número" required]
           .col-6.col-12-mobile
-            input[type="text" name="bairro" placeholder="Bairro"]
+            input[type="text" name="bairro" placeholder="Bairro" required]
           .col-6.col-12-mobile
-            input[type="text" name="cidade" placeholder="Cidade"]
+            input[type="text" name="cidade" placeholder="Cidade" required]
           .col-6.col-12-mobile
-            input[type="text" name="estado" placeholder="Estado"]
+            input[type="text" name="estado" placeholder="Estado" required]
         
         p
         |
@@ -193,7 +193,7 @@
                 
               td
                 |
-                = number_field_tag 'bob', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'bob', nil, in: 0...25, class: 'special_input'
             
             tr
               td
@@ -206,7 +206,7 @@
                 
               td
                 | 
-                = number_field_tag 'tim', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'tim', nil, in: 0...25, class: 'special_input'
             
             tr
               td
@@ -219,7 +219,7 @@
                 
               td
                 |
-                = number_field_tag 'dave', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'dave', nil, in: 0...25, class: 'special_input'
             
             tr
               td
@@ -232,7 +232,7 @@
                 
               td
                 |
-                = number_field_tag 'hawaii', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'hawaii', nil, in: 0...25, class: 'special_input'
             
             tr
               td
@@ -241,11 +241,11 @@
                 |  alt="" width="100px" height="100px">
               
               td
-                | Minion vampiro
+                | Minion Vampiro
                 
               td
                 |
-                = number_field_tag 'vamp', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'vamp', nil, in: 0...25, class: 'special_input'
            
             tr
               td
@@ -258,7 +258,7 @@
                 
               td
                 |
-                = number_field_tag 'ac', nil, in: 0...10, class: 'special_input'
+                = number_field_tag 'ac', nil, in: 0...25, class: 'special_input'
             
 
                   

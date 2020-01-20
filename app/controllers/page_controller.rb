@@ -3,7 +3,7 @@ class PageController < ApplicationController
     
         unless params.dig(:name).nil?
         
-          email = "Pedido do Cliente " + params[:name] + "."
+          email = "Pedido do Cliente " + params[:name] + ".\n Contato: " + params[:email] + "."
           
           address = "\nEndereço: Rua " + params[:rua] + ", " + params[:numero] + ", " + params[:bairro] + ", " + params[:cidade] + ", " + params[:estado] + "."
           
@@ -30,11 +30,12 @@ class PageController < ApplicationController
           end 
           
           if pedido == ""
-            pedido = "Não houve pedido"
-          end  
-          
-          message = "\nO pedido de " + params[:name] + " foi:\n " + pedido + "."
+            message = "Não houve pedido"
             
+          else
+            message = "\nO pedido de " + params[:name] + " foi:\n " + pedido + "."
+          
+          end  
           email_content = email+address+message
                 
           ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
