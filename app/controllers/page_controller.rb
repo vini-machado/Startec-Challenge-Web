@@ -3,7 +3,7 @@ class PageController < ApplicationController
     
         unless params.dig(:name).nil?
         
-          email = "Pedido do Cliente " + params[:name] + ".\n Contato: " + params[:email] + "."
+          email = "Pedido do Cliente " + params[:name] + ".\nContato: " + params[:email]
           
           address = "\nEndereço: Rua " + params[:rua] + ", " + params[:numero] + ", " + params[:bairro] + ", " + params[:cidade] + ", " + params[:estado] + "."
           
@@ -39,6 +39,9 @@ class PageController < ApplicationController
           email_content = email+address+message
                 
           ActionMailer::Base.mail(from:"reservation@minionstore.com", to: "viniciuscmachado22@gmail.com", subject: "Reserva dos Minions", body: email_content).deliver
+          
+         
+          render 'page/js'
           
           
         end
